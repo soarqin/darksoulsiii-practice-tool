@@ -15,7 +15,7 @@ pub(crate) struct Group {
 
 impl Group {
     pub(crate) fn new(label: &str, hotkey_close: KeyState, commands: Vec<Box<dyn Widget>>) -> Self {
-        let label_close = format!("Close ({hotkey_close})");
+        let label_close = format!("关闭 ({hotkey_close})");
         Self {
             label: label.to_string(),
             label_close,

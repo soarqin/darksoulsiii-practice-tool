@@ -6,13 +6,13 @@ commands = [
   { souls = 10000, hotkey = "9" },
   { open_menu = "travel" },
   { open_menu = "attune" },
-  { group = "Positions", commands = [
+  { group = "位置调整", commands = [
     { nudge = 1.0, nudge_up = "[", nudge_down = "]" },
     { position = "H", modifier = "rshift" },
     { position = "J", modifier = "rshift" },
     { position = "K", modifier = "rshift" },
   ]},
-  { group = "Render flags", commands = [
+  { group = "绘制开关", commands = [
     { flag = "rend_chr", hotkey = "F4" },
     { flag = "rend_obj", hotkey = "F5" },
     { flag = "rend_map", hotkey = "F6" },

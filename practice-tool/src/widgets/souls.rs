@@ -13,7 +13,7 @@ pub(crate) struct Souls {
 
 impl Souls {
     pub(crate) fn new(amount: u32, ptr: PointerChain<u32>, hotkey: KeyState) -> Self {
-        Souls { label: format!("Add {} Souls ({})", amount, hotkey), ptr, hotkey, amount }
+        Souls { label: format!("添加{}灵魂 ({})", amount, hotkey), ptr, hotkey, amount }
     }
 
     fn add(&self) -> Option<u32> {

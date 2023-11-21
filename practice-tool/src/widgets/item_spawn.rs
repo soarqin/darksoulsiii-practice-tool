@@ -13,22 +13,22 @@ use crate::util::KeyState;
 use crate::widgets::{scaling_factor, Widget};
 
 static INFUSION_TYPES: [(u32, &str); 16] = [
-    (0, "Normal"),
-    (100, "Heavy"),
-    (200, "Sharp"),
-    (300, "Refined"),
-    (400, "Simple"),
-    (500, "Crystal"),
-    (600, "Fire"),
-    (700, "Chaos"),
-    (800, "Lightning"),
-    (900, "Deep"),
-    (1000, "Dark"),
-    (1100, "Poison"),
-    (1200, "Blood"),
-    (1300, "Raw"),
-    (1400, "Blessed"),
-    (1500, "Hollow"),
+    (0, "普通"),
+    (100, "厚重"),
+    (200, "锋利"),
+    (300, "熟练"),
+    (400, "愚人"),
+    (500, "结晶"),
+    (600, "火焰"),
+    (700, "混沌"),
+    (800, "雷"),
+    (900, "幽邃"),
+    (1000, "暗"),
+    (1100, "毒"),
+    (1200, "血"),
+    (1300, "粗制"),
+    (1400, "祝福"),
+    (1500, "游魂"),
 ];
 
 static UPGRADES: [(u32, &str); 11] = [
@@ -183,8 +183,8 @@ impl ItemSpawner<'_> {
         hotkey_load: KeyState,
         hotkey_close: KeyState,
     ) -> Self {
-        let label_load = format!("Spawn item ({hotkey_load})");
-        let label_close = format!("Close ({hotkey_close})");
+        let label_load = format!("生成物品 ({hotkey_load})");
+        let label_close = format!("关闭 ({hotkey_close})");
         ItemSpawner {
             func_ptr,
             map_item_man,
@@ -206,7 +206,7 @@ impl ItemSpawner<'_> {
 
     fn spawn(&mut self) {
         if self.sentinel.get().is_none() {
-            self.write_log("Not spawning item when not in game".into());
+            self.write_log("不在游戏中无法生成物品".into());
             return;
         }
 
@@ -224,7 +224,7 @@ impl ItemSpawner<'_> {
         };
 
         self.write_log(format!(
-            "Spawning {} #{} {} {}",
+            "生成 {} #{} {} {}",
             i.qty, self.item_id, UPGRADES[self.upgrade].1, INFUSION_TYPES[self.infusion_type].1,
         ));
 
@@ -283,7 +283,7 @@ impl Widget for ItemSpawner<'_> {
             {
                 let _tok = ui.push_item_width(-1.);
                 if InputText::new(ui, "##item-spawn-filter", &mut self.filter_string)
-                    .hint("Filter...")
+                    .hint("过滤器...")
                     .build()
                 {
                     self.item_id_tree =
@@ -310,15 +310,15 @@ impl Widget for ItemSpawner<'_> {
                 Cow::Borrowed(label)
             });
 
-            ui.slider_config("Qty", 1, 99).build(&mut self.qty);
-            ui.slider_config("Dur", 0, 9999).build(&mut self.durability);
+            ui.slider_config("数量", 1, 99).build(&mut self.qty);
+            ui.slider_config("耐久度", 0, 9999).build(&mut self.durability);
             if self.hotkey_load.keyup(ui)
                 || ui.button_with_size(&self.label_load, [400., button_height])
             {
                 self.spawn();
             }
 
-            if ui.button_with_size("Clear", [400., button_height]) {
+            if ui.button_with_size("重置", [400., button_height]) {
                 self.filter_string.clear();
                 self.qty = 1;
                 self.durability = 100;
@@ -408,7 +408,7 @@ impl Display for ItemSpawnInstance {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
         write!(
             f,
-            "{:08x} (qty={}, dur={}, infusion={}, upgrade={})",
+            "{:08x} (数量={}, 耐久度={}, 质变={}, 升级={})",
             self.item_id, self.qty, self.durability, self.infusion, self.upgrade
         )
     }

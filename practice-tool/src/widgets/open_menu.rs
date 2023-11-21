@@ -48,8 +48,8 @@ impl Widget for OpenMenu {
     fn render(&mut self, ui: &imgui::Ui) {
         let scale = super::scaling_factor(ui);
         let label = match self.kind {
-            OpenMenuKind::Travel => "Warp menu",
-            OpenMenuKind::Attune => "Attune menu",
+            OpenMenuKind::Travel => "传送菜单",
+            OpenMenuKind::Attune => "法术记忆菜单",
         };
 
         if ui.button_with_size(label, [super::BUTTON_WIDTH * scale, super::BUTTON_HEIGHT]) {

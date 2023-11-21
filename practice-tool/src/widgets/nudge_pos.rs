@@ -20,8 +20,8 @@ impl NudgePosition {
         nudge_up: KeyState,
         nudge_down: KeyState,
     ) -> Self {
-        let nudge_up_label = format!("Nudge up ({})", nudge_up);
-        let nudge_down_label = format!("Nudge down ({})", nudge_down);
+        let nudge_up_label = format!("微升 ({})", nudge_up);
+        let nudge_down_label = format!("微降 ({})", nudge_down);
         NudgePosition { position, nudge, nudge_up, nudge_down, nudge_up_label, nudge_down_label }
     }
 
