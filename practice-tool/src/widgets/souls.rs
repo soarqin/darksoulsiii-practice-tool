@@ -12,7 +12,7 @@ struct Souls {
 
 impl Souls {
     fn new(amount: u32, ptr: PointerChain<u32>) -> Self {
-        Self { ptr, current: 0, amount, label: format!("Add {amount} souls") }
+        Self { ptr, current: 0, amount, label: format!("添加{amount}灵魂") }
     }
 }
 
