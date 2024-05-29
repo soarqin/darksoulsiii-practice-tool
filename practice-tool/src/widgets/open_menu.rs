@@ -49,8 +49,8 @@ impl ReadWrite for OpenMenu {
 
     fn label(&self) -> &str {
         match self.kind {
-            OpenMenuKind::Travel => "Warp menu",
-            OpenMenuKind::Attune => "Attune menu",
+            OpenMenuKind::Travel => "传送菜单",
+            OpenMenuKind::Attune => "法术记忆菜单",
         }
     }
 }

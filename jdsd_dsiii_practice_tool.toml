@@ -7,13 +7,13 @@ commands = [
   { souls = 10000, hotkey = "9" },
   { open_menu = "travel" },
   { open_menu = "attune" },
-  { group = "Positions", commands = [
+  { group = "位置调整", commands = [
     { nudge = 1.0, nudge_up = "[", nudge_down = "]" },
     { position = "h", save = "rshift+h" },
     { position = "j", save = "rshift+j" },
     { position = "k", save = "rshift+k" },
   ]},
-  { group = "Render flags", commands = [
+  { group = "绘制开关", commands = [
     { flag = "rend_chr", hotkey = "f4" },
     { flag = "rend_obj", hotkey = "f5" },
     { flag = "rend_map", hotkey = "f6" },
@@ -25,7 +25,7 @@ commands = [
     { flag = "debug_sphere_2" },
     { flag = "evt_draw" },
     { label = "" },
-    { label = "Below needs debug draw enabled:" },
+    { label = "以下功能需要开启调试绘制:" },
     { flag = "debug_draw" },
     { flag = "hurtbox" },
     { flag = "bloodstain_draw" },
@@ -47,13 +47,13 @@ commands = [
 ]
 
 radial-menu = [
-  { key = "p", label = "Quitout" },
-  { key = "h", label = "Load position" },
-  { key = "ctrl+o", label = "Load savefile" },
-  { key = "f1", label = "AI Disable" },
-  { key = "1", label = "No Damage" },
-  { key = "ctrl+n", label = "Target Info" },
-  { key = "rshift+h", label = "Save position" },
+  { key = "p", label = "快速退出" },
+  { key = "h", label = "加载位置" },
+  { key = "ctrl+o", label = "加载存档文件" },
+  { key = "f1", label = "不计算AI" },
+  { key = "1", label = "全体无伤害" },
+  { key = "ctrl+n", label = "锁定目标单位信息" },
+  { key = "rshift+h", label = "保存位置" },
 ]
 
 [settings]

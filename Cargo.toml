@@ -31,7 +31,7 @@ parking_lot = "0.12.1"
 serde = { version = "1.0.197", features = ["derive"] }
 serde_json = "1.0.114"
 hudhook = { version = "0.7.0", features = ["dx11", "inject"], default-features = false }
-practice-tool-core = { git = "https://github.com/veeenu/practice-tool-core", version = "0.1.0" }
+practice-tool-core = { git = "https://github.com/soarqin/practice-tool-core", branch="i18n_zh-CN", version = "0.1.0" }
 practice-tool-tasks = { git = "https://github.com/veeenu/practice-tool-core", version = "0.1.0" }
 
 [workspace.dependencies.windows]

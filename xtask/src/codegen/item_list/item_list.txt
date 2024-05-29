@@ -56,7 +56,6 @@ Melee weapons
     Morion Blade:002143A0
     Ringed Knight Straight Sword:00225510
     Shortsword:001E8480
-    Smoldering Straight Sword:000D9490
     Sunlight Straight Sword:00203230
     Valorheart:00F646E0
 
@@ -168,19 +167,19 @@ Melee weapons
 
   Greathammers
     Dragon Tooth:007E09A0
-    Gargoyle Flame Hammer (missing!):00000000
+    Gargoyle Flame Hammer:007CAA10
     Great Club:007B4A80
     Great Mace:007BBFB0
     Great Wooden Hammer:007C8300
     Large Club:007AFC60
     Ledo's Great Hammer:007EF400
     Morne's Great Hammer:007E7ED0
-    Old King's Great Hammer (missing!):00000000
+    Old King's Great Hammer:007CF830
     Pickaxe:007DE290
     Quakestone Hammer:007ECCF0
     Smough's Great Hammer:007E30B0
     Spiked Mace:007EA5E0
-    Vordt's Great Hammer (missing!):00000000
+    Vordt's Great Hammer:007CF830
 
   Spears and Pikes
     Arstor's Spear:008BEC50
@@ -376,398 +375,377 @@ Shields
     Stone Greatshield:0151D460
     Twin Dragon Greatshield:01513820
     Wolf Knight's Greatshield:01511110
-    Yhorm's Greatshield (missing!):00000000
+    Yhorm's Greatshield:0150C2F0
 
 Armor
-
-  A-C
-    Alva Helm:14C4B400
-    Alva Armor:14C4B7E8
-    Alva Gauntlets:14C4BBD0
-    Alva Leggings:14C4BFB8
-    Antiquated Plain Garb:11B2E408
-    Violet Wrappings:11B2E7F0
-    Loincloth:11B2EBD8
-    Crown of Dusk:15D75C80
-    Antiquated Dress:15D76068
-    Antiquated Gloves:15D76450
-    Antiquated Skirt:15D76838
-    Archdeacon White Crown:13EF1480
-    Archdeacon Holy Garb:13EF1868
-    Archdeacon Skirt:13EF2038
-    Assassin Gloves:115EFB90
-    Assassin Trousers:115EFF78
-    Assassin Hood:11607A60
-    Assassin Armor:11607E48
-    Billed Mask:11A39DE0
-    Black Dress:11A3A1C8
-    Black Gauntlets:11A3A5B0
-    Black Leggings:11A3A998
-    Black Hand Hat:115EF3C0
-    Black Hand Armor:115EF7A8
-    Black Knight Helm:1337F980
-    Black Knight Armor:1337FD68
-    Black Knight Gauntlets:13380150
-    Black Knight Leggings:13380538
-    Thief Mask:14A62F80
-    Black Iron Helm:155D4A80
-    Black Iron Armor:155D4E68
-    Black Iron Gauntlets:155D5250
-    Black Iron Leggings:155D5638
-    Thief Mask:12656740
-    Black Leather Armor:14A63368
-    Black Leather Gloves:14A63750
-    Black Leather Boots:14A63B38
-    Black Witch Veil:14FA1BE0
-    Black Witch Hat:14EAD9A0
-    Black Witch Garb:14EADD88
-    Black Witch Wrappings:14EAE170
-    Black Witch Trousers:14EAE558
-    Brass Helm:1501BD00
-    Brass Armor:1501C0E8
-    Brass Gauntlets:1501C4D0
-    Brass Leggings:1501C8B8
-    Brigand Hood:148009E0
-    Brigand Armor:14800DC8
-    Brigand Gauntlets:148011B0
-    Brigand Trousers:14801598
-    Catarina Helm:14692680
-    Catarina Armor:14692A68
-    Catarina Gauntlets:14692E50
-    Catarina Leggings:14693238
-    Cathedral Knight Helm:130291A0
-    Cathedral Knight Armor:13029588
-    Cathedral Knight Gauntlets:13029970
-    Cathedral Knight Leggings:13029D58
-    Chain Helm:142C1D80
-    Chain Armor:142C2168
-    Leather Gauntlets:142C2550
-    Chain Leggings:142C2938
-    Clandestine Coat:11CB4E08
-    Cleric Hat:11D905C0
-    Cleric Blue Robe:11D909A8
-    Cleric Gloves:11D90D90
-    Cleric Trousers:11D91178
-    Conjurator Hood:149E8E60
-    Conjurator Robe:149E9248
-    Conjurator Manchettes:149E9630
-    Conjurator Boots:149E9A18
-    Court Sorcerer Hood:11BA8140
-    Court Sorcerer Robe:11BA8528
-    Court Sorcerer Gloves:11BA8910
-    Court Sorcerer Trousers:11BA8CF8
-    Old Sage's Blindfold:11945BA0
-    Cornyx's Garb:11945F88
-    Cornyx's Wrap:11946370
-    Cornyx's Skirt:11946758
-
-  D-E
-    Dancer's Crown:13C14DC0
-    Dancer's Armor:13C151A8
-    Dancer's Gauntlets:13C15590
-    Dancer's Leggings:13C15978
-    Dark Mask:133F9AA0
-    Dark Armor:133F9E88
-    Dark Gauntlets:133FA270
-    Dark Leggings:133FA658
-    Deacon Robe:13F6B988
-    Deacon Skirt:13F6C158
-    Desert Pyromancer Hood:14DB9760
-    Desert Pyromancer Garb:14DB9B48
-    Desert Pyromancer Gloves:14DB9F30
-    Desert Pyromancer Skirt:14DBA318
-    Steel Soldier Helm:12625A00
-    Deserter Armor:12625DE8
-    Deserter Trousers:126265B8
-    Dragon Head:100F4240
-    Dragon Body:100F4628
-    Dragon Arms:100F4A10
-    Dragon Legs:100F4DF8
-    Dragonslayer Helm:158B1140
-    Dragonslayer Armor:158B1528
-    Dragonslayer Gauntlets:158B1910
-    Dragonslayer Leggings:158B1CF8
-    Drakeblood Helm:153EC600
-    Drakeblood Armor:153EC9E8
-    Drakeblood Gauntlets:153ECDD0
-    Drakeblood Leggings:153ED1B8
-    Drang Armor:154E0C28
-    Drang Gauntlets:154E1010
-    Drang Shoes:154E13F8
-    Golden Crown:1365C040
-    Dragonscale Armor:1365C428
-    Golden Bracelets:1365C810
-    Dragonscale Waistcloth:1365CBF8
-    Eastern Helm:14E33880
-    Eastern Armor:14E33C68
-    Eastern Gauntlets:14E34050
-    Eastern Leggings:14E34438
-    Elite Knight Helm:144AA200
-    Elite Knight Armor:144AA5E8
-    Elite Knight Gauntlets:144AA9D0
-    Elite Knight Leggings:144AADB8
-    Evangelist Hat:12DC6C00
-    Evangelist Robe:12DC6FE8
-    Evangelist Gloves:12DC73D0
-    Evangelist Trousers:12DC77B8
-    Executioner Helm:119BFCC0
-    Executioner Armor:119C00A8
-    Executioner Gauntlets:119C0490
-    Executioner Leggings:119C0878
-    Exile Mask:13473BC0
-    Exile Armor:13473FA8
-    Exile Gauntlets:13474390
-    Exile Leggings:13474778
-
-  F-J
-    Fallen Knight Helm:1121EAC0
-    Fallen Knight Armor:1121EEA8
-    Fallen Knight Gauntlets:1121F290
-    Fallen Knight Trousers:1121F678
-    Faraam Helm:1459E440
-    Faraam Armor:1459E828
-    Faraam Gauntlets:1459EC10
-    Faraam Boots:1459EFF8
-    Helm of Favor:14F27AC0
-    Embraced Armor of Favor:14F27EA8
-    Gauntlets of Favor:14F28290
-    Leggings of Favor:14F28678
-    Fire Keeper Robe:140D9CE8
-    Fire Keeper Gloves:140DA0D0
-    Fire Keeper Skirt:140DA4B8
-    Fire Witch Helm:13938700
-    Fire Witch Armor:13938AE8
-    Fire Witch Gauntlets:13938ED0
-    Fire Witch Leggings:139392B8
-    Firelink Helm:11406F40
-    Firelink Armor:11407328
-    Firelink Gauntlets:11407710
-    Firelink Leggings:11407AF8
-    Follower Helm:137CA3A0
-    Follower Armor:137CA788
-    Follower Gloves:137CAB70
-    Follower Boots:137CAF58
-    Grave Warden Hood:12BDE780
-    Grave Warden Robe:12BDEB68
-    Grave Warden Wrap:12BDEF50
-    Grave Warden Skirt:12BDF338
-    Gundyr's Helm:13D09000
-    Gundyr's Armor:13D093E8
-    Gundyr's Gauntlets:13D097D0
-    Gundyr's Leggings:13D09BB8
-    Harald Legion Armor:13D83508
-    Harald Legion Gauntlets:13D838F0
-    Harald Legion Leggings:13D83CD8
-    Standard Helm:1470C7A0
-    Hard Leather Armor:1470CB88
-    Hard Leather Gauntlets:1470CF70
-    Hard Leather Boots:1470D358
-    Havel's Helm:147868C0
-    Havel's Armor:14786CA8
-    Havel's Gauntlets:14787090
-    Havel's Leggings:14787478
-    Herald Helm:114FB180
-    Herald Armor:114FB568
-    Herald Gloves:114FB950
-    Herald Trousers:114FBD38
-    Aristocrat's Mask:129F6300
-    Iron Dragonslayer Helm:1405F7E0
-    Iron Dragonslayer Armor:1405FBC8
-    Iron Dragonslayer Gauntlets:1405FFB0
-    Iron Dragonslayer Leggings:14060398
-    Iron Helm:152F83C0
-    Armor of the Sun:152F87A8
-    Iron Bracelets:152F8B90
-    Iron Leggings:152F8F78
-    Jailer Robe:129F66E8
-    Jailer Gloves:129F6AD0
-    Jailer Trousers:129F6EB8
-
-  K-M
-    Karla's Pointed Hat:15E69EC0
-    Karla's Coat:15E6A2A8
-    Karla's Gloves:15E6A690
-    Karla's Trousers:15E6AA78
-    Knight Helm:11298BE0
-    Knight Armor:11298FC8
-    Knight Gauntlets:112993B0
-    Knight Leggings:11299798
-    Lapp's Helm:11E84800
-    Lapp's Armor:11E84BE8
-    Lapp's Gauntlets:11E84FD0
-    Lapp's Leggings:11E853B8
-    Pharis's Hat:1487AB00
-    Leather Armor:1487AEE8
-    Leather Gloves:1487B2D0
-    Leather Boots:1487B6B8
-    Lothric Knight Helm:13197500
-    Lothric Knight Armor:131978E8
-    Lothric Knight Gauntlets:13197CD0
-    Lothric Knight Leggings:131980B8
-    Silver Mask:117D7840
-    Leonhard's Garb:117D7C28
-    Leonhard's Gauntlets:117D8010
-    Leonhard's Trousers:117D83F8
-    Lorian's Helm:13A2C940
-    Lorian's Armor:13A2CD28
-    Lorian's Gauntlets:13A2D110
-    Lorian's Leggings:13A2D4F8
-    Ragged Mask:148F4C20
-    Master's Attire:148F5008
-    Master's Gloves:148F53F0
-    Loincloth:148F57D8
-    Millwood Knight Helm:139B2820
-    Millwood Knight Armor:139B2C08
-    Millwood Knight Gauntlets:139B2FF0
-    Millwood Knight Leggings:139B33D8
-    Maiden Hood:14BD12E0
-    Maiden Robe:14BD16C8
-    Maiden Gloves:14BD1AB0
-    Maiden Skirt:14BD1E98
-    Creighton's Steel Mask:14B571C0
-    Mirrah Chain Mail:14B575A8
-    Mirrah Chain Gloves:14B57990
-    Mirrah Chain Leggings:14B57D78
-    Lucatiel's Mask:15204180
-    Mirrah Vest:15204568
-    Mirrah Gloves:15204950
-    Mirrah Trousers:15204D38
-    Morne's Helm:1175D720
-    Morne's Armor:1175DB08
-    Morne's Gauntlets:1175DEF0
-    Morne's Leggings:1175E2D8
-
-  N-R
-    Nameless Knight Helm:143B5FC0
-    Nameless Knight Armor:143B63A8
-    Nameless Knight Gauntlets:143B6790
-    Nameless Knight Leggings:143B6B78
-    Northern Helm:116E3600
-    Northern Armor:116E39E8
-    Northern Gloves:116E3DD0
-    Northern Trousers:116E41B8
-    Old Sorcerer Hat:1496ED40
-    Old Sorcerer Coat:1496F128
-    Old Sorcerer Gauntlets:1496F510
-    Old Sorcerer Boots:1496F8F8
-    Ordained Hood:135E1F20
-    Ordained Dress:135E2308
-    Ordained Trousers:135E2AD8
-    Outrider Knight Helm:1328B740
-    Outrider Knight Armor:1328BB28
-    Outrider Knight Gauntlets:1328BF10
-    Outrider Knight Leggings:1328C2F8
-    Painting Guardian Hood:156C8CC0
-    Painting Guardian Gown:156C90A8
-    Painting Guardian Gloves:156C9490
-    Painting Guardian Waistcloth:156C9878
-    Sneering Mask:11851960
-    Pale Shade Robe:11851D48
-    Pale Shade Gloves:11852130
-    Pale Shade Trousers:11852518
-    Pontiff Knight Crown:13567E00
-    Pontiff Knight Armor:135681E8
-    Pontiff Knight Gauntlets:135685D0
-    Pontiff Knight Leggings:135689B8
-    Hood of Prayer:13AA6A60
-    Robe of Prayer:13AA6E48
-    Skirt of Prayer:13AA7618
-    Pyromancer Crown:11AB3F00
-    Pyromancer Garb:11AB42E8
-    Pyromancer Wrap:11AB46D0
-    Pyromancer Trousers:11AB4AB8
-    Ringed Knight Hood:13C8EEE0
-    Ringed Knight Armor:13C8F2C8
-    Ringed Knight Gauntlets:13C8F6B0
-    Ringed Knight Leggings:13C8FA98
-    Ruin Sentinel Helm:14CC5520
-    Ruin Sentinel Armor:14CC5908
-    Ruin Sentinel Gauntlets:14CC5CF0
-    Ruin Sentinel Leggings:14CC60D8
-
-  S
-    Scholar's Shed Skin:12E40D20
-    Scholar's Robe:12E41108
-    Sellsword Helm:11481060
-    Sellsword Armor:11481448
-    Sellsword Gauntlet:11481830
-    Sellsword Trousers:11481C18
-    Shadow Mask:14D3F640
-    Shadow Garb:14D3FA28
-    Shadow Gauntlets:14D3FE10
-    Shadow Leggings:14D401F8
-    Shira's Crown:11C22260
-    Shira's Armor:11C22648
-    Shira's Gloves:11C22A30
-    Shira's Trousers:11C22E18
-    Silver Knight Helm:1510FF40
-    Silver Knight Armor:15110328
-    Silver Knight Gauntlets:15110710
-    Silver Knight Leggings:15110AF8
-    Slave Knight Hood:134EDCE0
-    Slave Knight Armor:134EE0C8
-    Slave Knight Gauntlets:134EE4B0
-    Slave Knight Leggings:134EE898
-    Smough's Helm:159A5380
-    Smough's Armor:159A5768
-    Smough's Gauntlets:159A5B50
-    Smough's Leggings:159A5F38
-    Sorcerer Hood:11C9C380
-    Sorcerer Robe:11C9C768
-    Sorcerer Gloves:11C9CB50
-    Sorcerer Trousers:11C9CF38
-    Sunless Veil:115752A0
-    Sunless Armor:11575688
-    Sunless Gauntlets:11575A70
-    Sunless Leggings:11575E58
-    Sunset Helm:118CBA80
-    Sunset Armor:118CBE68
-    Sunset Gauntlets:118CC250
-    Sunset Leggings:118CC638
-
-  T-X
-    Helm of Thorns:15B8D800
-    Armor of Thorns:15B8DBE8
-    Gauntlets of Thorns:15B8DFD0
-    Leggings of Thorns:15B8E3B8
-    Undead Legion Helm:13750280
-    Undead Legion Armor:13750668
-    Undead Legion Gauntlet:13750A50
-    Undead Legion Leggings:13750E38
-    Vilhelm's Helm:11312D00
-    Vilhelm's Armor:113130E8
-    Vilhelm's Gauntlets:113134D0
-    Vilhelm's Leggings:113138B8
-    Winged Knight Helm:12EBAE40
-    Winged Knight Armor:12EBB228
-    Winged Knight Gauntlets:12EBB610
-    Winged Knight Leggings:12EBB9F8
-    Wolf Knight Helm:157BCF00
-    Wolf Knight Armor:157BD2E8
-    Wolf Knight Gauntlets:157BD6D0
-    Wolf Knight Leggings:157BDAB8
-    Worker Hat:12CD29C0
-    Worker Garb:12CD2DA8
-    Worker Gloves:12CD3190
-    Worker Trousers:12CD3578
-    Xanthous Crown:116694E0
-    Xanthous Overcoat:116698C8
-    Xanthous Gloves:11669CB0
-    Xanthous Trousers:1166A098
-
-  Misc pieces
-    Blindfold Mask:15095E20
-    Sage's Big Hat:129020C0
-    Symbol of Avarice:14ADD0A0
-    Thrall Hood:12D4CAE0
-    White Preacher Head:14153A20
-    Wolnir's Crown:136D6160
+  Alva Helm:14C4B400
+  Alva Armor:14C4B7E8
+  Alva Gauntlets:14C4BBD0
+  Alva Leggings:14C4BFB8
+  Antiquated Plain Garb:11B2E408
+  Violet Wrappings:11B2E7F0
+  Loincloth:11B2EBD8
+  Crown of Dusk:15D75C80
+  Antiquated Dress:15D76068
+  Antiquated Gloves:15D76450
+  Antiquated Skirt:15D76838
+  Archdeacon White Crown:13EF1480
+  Archdeacon Holy Garb:13EF1868
+  Archdeacon Skirt:13EF2038
+  Assassin Gloves:115EFB90
+  Assassin Trousers:115EFF78
+  Assassin Hood:11607A60
+  Assassin Armor:11607E48
+  Billed Mask:11A39DE0
+  Black Dress:11A3A1C8
+  Black Gauntlets:11A3A5B0
+  Black Leggings:11A3A998
+  Black Hand Hat:115EF3C0
+  Black Hand Armor:115EF7A8
+  Black Knight Helm:1337F980
+  Black Knight Armor:1337FD68
+  Black Knight Gauntlets:13380150
+  Black Knight Leggings:13380538
+  Thief Mask:14A62F80
+  Black Iron Helm:155D4A80
+  Black Iron Armor:155D4E68
+  Black Iron Gauntlets:155D5250
+  Black Iron Leggings:155D5638
+  Thief Mask:12656740
+  Black Leather Armor:14A63368
+  Black Leather Gloves:14A63750
+  Black Leather Boots:14A63B38
+  Black Witch Veil:14FA1BE0
+  Black Witch Hat:14EAD9A0
+  Black Witch Garb:14EADD88
+  Black Witch Wrappings:14EAE170
+  Black Witch Trousers:14EAE558
+  Brass Helm:1501BD00
+  Brass Armor:1501C0E8
+  Brass Gauntlets:1501C4D0
+  Brass Leggings:1501C8B8
+  Brigand Hood:148009E0
+  Brigand Armor:14800DC8
+  Brigand Gauntlets:148011B0
+  Brigand Trousers:14801598
+  Catarina Helm:14692680
+  Catarina Armor:14692A68
+  Catarina Gauntlets:14692E50
+  Catarina Leggings:14693238
+  Cathedral Knight Helm:130291A0
+  Cathedral Knight Armor:13029588
+  Cathedral Knight Gauntlets:13029970
+  Cathedral Knight Leggings:13029D58
+  Chain Helm:142C1D80
+  Chain Armor:142C2168
+  Leather Gauntlets:142C2550
+  Chain Leggings:142C2938
+  Clandestine Coat:11CB4E08
+  Cleric Hat:11D905C0
+  Cleric Blue Robe:11D909A8
+  Cleric Gloves:11D90D90
+  Cleric Trousers:11D91178
+  Conjurator Hood:149E8E60
+  Conjurator Robe:149E9248
+  Conjurator Manchettes:149E9630
+  Conjurator Boots:149E9A18
+  Court Sorcerer Hood:11BA8140
+  Court Sorcerer Robe:11BA8528
+  Court Sorcerer Gloves:11BA8910
+  Court Sorcerer Trousers:11BA8CF8
+  Old Sage's Blindfold:11945BA0
+  Cornyx's Garb:11945F88
+  Cornyx's Wrap:11946370
+  Cornyx's Skirt:11946758
+  Dancer's Crown:13C14DC0
+  Dancer's Armor:13C151A8
+  Dancer's Gauntlets:13C15590
+  Dancer's Leggings:13C15978
+  Dark Mask:133F9AA0
+  Dark Armor:133F9E88
+  Dark Gauntlets:133FA270
+  Dark Leggings:133FA658
+  Deacon Robe:13F6B988
+  Deacon Skirt:13F6C158
+  Desert Pyromancer Hood:14DB9760
+  Desert Pyromancer Garb:14DB9B48
+  Desert Pyromancer Gloves:14DB9F30
+  Desert Pyromancer Skirt:14DBA318
+  Steel Soldier Helm:12625A00
+  Deserter Armor:12625DE8
+  Deserter Trousers:126265B8
+  Dragonslayer Helm:158B1140
+  Dragonslayer Armor:158B1528
+  Dragonslayer Gauntlets:158B1910
+  Dragonslayer Leggings:158B1CF8
+  Drakeblood Helm:153EC600
+  Drakeblood Armor:153EC9E8
+  Drakeblood Gauntlets:153ECDD0
+  Drakeblood Leggings:153ED1B8
+  Drang Armor:154E0C28
+  Drang Gauntlets:154E1010
+  Drang Shoes:154E13F8
+  Golden Crown:1365C040
+  Dragonscale Armor:1365C428
+  Golden Bracelets:1365C810
+  Dragonscale Waistcloth:1365CBF8
+  Eastern Helm:14E33880
+  Eastern Armor:14E33C68
+  Eastern Gauntlets:14E34050
+  Eastern Leggings:14E34438
+  Elite Knight Helm:144AA200
+  Elite Knight Armor:144AA5E8
+  Elite Knight Gauntlets:144AA9D0
+  Elite Knight Leggings:144AADB8
+  Evangelist Hat:12DC6C00
+  Evangelist Robe:12DC6FE8
+  Evangelist Gloves:12DC73D0
+  Evangelist Trousers:12DC77B8
+  Executioner Helm:119BFCC0
+  Executioner Armor:119C00A8
+  Executioner Gauntlets:119C0490
+  Executioner Leggings:119C0878
+  Exile Mask:13473BC0
+  Exile Armor:13473FA8
+  Exile Gauntlets:13474390
+  Exile Leggings:13474778
+  Fallen Knight Helm:1121EAC0
+  Fallen Knight Armor:1121EEA8
+  Fallen Knight Gauntlets:1121F290
+  Fallen Knight Trousers:1121F678
+  Faraam Helm:1459E440
+  Faraam Armor:1459E828
+  Faraam Gauntlets:1459EC10
+  Faraam Boots:1459EFF8
+  Helm of Favor:14F27AC0
+  Embraced Armor of Favor:14F27EA8
+  Gauntlets of Favor:14F28290
+  Leggings of Favor:14F28678
+  Fire Keeper Robe:140D9CE8
+  Fire Keeper Gloves:140DA0D0
+  Fire Keeper Skirt:140DA4B8
+  Fire Witch Helm:13938700
+  Fire Witch Armor:13938AE8
+  Fire Witch Gauntlets:13938ED0
+  Fire Witch Leggings:139392B8
+  Firelink Helm:11406F40
+  Firelink Armor:11407328
+  Firelink Gauntlets:11407710
+  Firelink Leggings:11407AF8
+  Follower Helm:137CA3A0
+  Follower Armor:137CA788
+  Follower Gloves:137CAB70
+  Follower Boots:137CAF58
+  Grave Warden Hood:12BDE780
+  Grave Warden Robe:12BDEB68
+  Grave Warden Wrap:12BDEF50
+  Grave Warden Skirt:12BDF338
+  Gundyr's Helm:13D09000
+  Gundyr's Armor:13D093E8
+  Gundyr's Gauntlets:13D097D0
+  Gundyr's Leggings:13D09BB8
+  Harald Legion Armor:13D83508
+  Harald Legion Gauntlets:13D838F0
+  Harald Legion Leggings:13D83CD8
+  Standard Helm:1470C7A0
+  Hard Leather Armor:1470CB88
+  Hard Leather Gauntlets:1470CF70
+  Hard Leather Boots:1470D358
+  Havel's Helm:147868C0
+  Havel's Armor:14786CA8
+  Havel's Gauntlets:14787090
+  Havel's Leggings:14787478
+  Herald Helm:114FB180
+  Herald Armor:114FB568
+  Herald Gloves:114FB950
+  Herald Trousers:114FBD38
+  Aristocrat's Mask:129F6300
+  Iron Dragonslayer Helm:1405F7E0
+  Iron Dragonslayer Armor:1405FBC8
+  Iron Dragonslayer Gauntlets:1405FFB0
+  Iron Dragonslayer Leggings:14060398
+  Iron Helm:152F83C0
+  Armor of the Sun:152F87A8
+  Iron Bracelets:152F8B90
+  Iron Leggings:152F8F78
+  Jailer Robe:129F66E8
+  Jailer Gloves:129F6AD0
+  Jailer Trousers:129F6EB8
+  Karla's Pointed Hat:15E69EC0
+  Karla's Coat:15E6A2A8
+  Karla's Gloves:15E6A690
+  Karla's Trousers:15E6AA78
+  Knight Helm:11298BE0
+  Knight Armor:11298FC8
+  Knight Gauntlets:112993B0
+  Knight Leggings:11299798
+  Lapp's Helm:11E84800
+  Lapp's Armor:11E84BE8
+  Lapp's Gauntlets:11E84FD0
+  Lapp's Leggings:11E853B8
+  Pharis's Hat:1487AB00
+  Leather Armor:1487AEE8
+  Leather Gloves:1487B2D0
+  Leather Boots:1487B6B8
+  Lothric Knight Helm:13197500
+  Lothric Knight Armor:131978E8
+  Lothric Knight Gauntlets:13197CD0
+  Lothric Knight Leggings:131980B8
+  Silver Mask:117D7840
+  Leonhard's Garb:117D7C28
+  Leonhard's Gauntlets:117D8010
+  Leonhard's Trousers:117D83F8
+  Lorian's Helm:13A2C940
+  Lorian's Armor:13A2CD28
+  Lorian's Gauntlets:13A2D110
+  Lorian's Leggings:13A2D4F8
+  Ragged Mask:148F4C20
+  Master's Attire:148F5008
+  Master's Gloves:148F53F0
+  Loincloth:148F57D8
+  Millwood Knight Helm:139B2820
+  Millwood Knight Armor:139B2C08
+  Millwood Knight Gauntlets:139B2FF0
+  Millwood Knight Leggings:139B33D8
+  Maiden Hood:14BD12E0
+  Maiden Robe:14BD16C8
+  Maiden Gloves:14BD1AB0
+  Maiden Skirt:14BD1E98
+  Creighton's Steel Mask:14B571C0
+  Mirrah Chain Mail:14B575A8
+  Mirrah Chain Gloves:14B57990
+  Mirrah Chain Leggings:14B57D78
+  Lucatiel's Mask:15204180
+  Mirrah Vest:15204568
+  Mirrah Gloves:15204950
+  Mirrah Trousers:15204D38
+  Morne's Helm:1175D720
+  Morne's Armor:1175DB08
+  Morne's Gauntlets:1175DEF0
+  Morne's Leggings:1175E2D8
+  Nameless Knight Helm:143B5FC0
+  Nameless Knight Armor:143B63A8
+  Nameless Knight Gauntlets:143B6790
+  Nameless Knight Leggings:143B6B78
+  Northern Helm:116E3600
+  Northern Armor:116E39E8
+  Northern Gloves:116E3DD0
+  Northern Trousers:116E41B8
+  Old Sorcerer Hat:1496ED40
+  Old Sorcerer Coat:1496F128
+  Old Sorcerer Gauntlets:1496F510
+  Old Sorcerer Boots:1496F8F8
+  Ordained Hood:135E1F20
+  Ordained Dress:135E2308
+  Ordained Trousers:135E2AD8
+  Outrider Knight Helm:1328B740
+  Outrider Knight Armor:1328BB28
+  Outrider Knight Gauntlets:1328BF10
+  Outrider Knight Leggings:1328C2F8
+  Painting Guardian Hood:156C8CC0
+  Painting Guardian Gown:156C90A8
+  Painting Guardian Gloves:156C9490
+  Painting Guardian Waistcloth:156C9878
+  Sneering Mask:11851960
+  Pale Shade Robe:11851D48
+  Pale Shade Gloves:11852130
+  Pale Shade Trousers:11852518
+  Pontiff Knight Crown:13567E00
+  Pontiff Knight Armor:135681E8
+  Pontiff Knight Gauntlets:135685D0
+  Pontiff Knight Leggings:135689B8
+  Hood of Prayer:13AA6A60
+  Robe of Prayer:13AA6E48
+  Skirt of Prayer:13AA7618
+  Pyromancer Crown:11AB3F00
+  Pyromancer Garb:11AB42E8
+  Pyromancer Wrap:11AB46D0
+  Pyromancer Trousers:11AB4AB8
+  Ringed Knight Hood:13C8EEE0
+  Ringed Knight Armor:13C8F2C8
+  Ringed Knight Gauntlets:13C8F6B0
+  Ringed Knight Leggings:13C8FA98
+  Ruin Sentinel Helm:14CC5520
+  Ruin Sentinel Armor:14CC5908
+  Ruin Sentinel Gauntlets:14CC5CF0
+  Ruin Sentinel Leggings:14CC60D8
+  Scholar's Shed Skin:12E40D20
+  Scholar's Robe:12E41108
+  Sellsword Helm:11481060
+  Sellsword Armor:11481448
+  Sellsword Gauntlet:11481830
+  Sellsword Trousers:11481C18
+  Shadow Mask:14D3F640
+  Shadow Garb:14D3FA28
+  Shadow Gauntlets:14D3FE10
+  Shadow Leggings:14D401F8
+  Shira's Crown:11C22260
+  Shira's Armor:11C22648
+  Shira's Gloves:11C22A30
+  Shira's Trousers:11C22E18
+  Silver Knight Helm:1510FF40
+  Silver Knight Armor:15110328
+  Silver Knight Gauntlets:15110710
+  Silver Knight Leggings:15110AF8
+  Slave Knight Hood:134EDCE0
+  Slave Knight Armor:134EE0C8
+  Slave Knight Gauntlets:134EE4B0
+  Slave Knight Leggings:134EE898
+  Smough's Helm:159A5380
+  Smough's Armor:159A5768
+  Smough's Gauntlets:159A5B50
+  Smough's Leggings:159A5F38
+  Sorcerer Hood:11C9C380
+  Sorcerer Robe:11C9C768
+  Sorcerer Gloves:11C9CB50
+  Sorcerer Trousers:11C9CF38
+  Sunless Veil:115752A0
+  Sunless Armor:11575688
+  Sunless Gauntlets:11575A70
+  Sunless Leggings:11575E58
+  Sunset Helm:118CBA80
+  Sunset Armor:118CBE68
+  Sunset Gauntlets:118CC250
+  Sunset Leggings:118CC638
+  Helm of Thorns:15B8D800
+  Armor of Thorns:15B8DBE8
+  Gauntlets of Thorns:15B8DFD0
+  Leggings of Thorns:15B8E3B8
+  Undead Legion Helm:13750280
+  Undead Legion Armor:13750668
+  Undead Legion Gauntlet:13750A50
+  Undead Legion Leggings:13750E38
+  Vilhelm's Helm:11312D00
+  Vilhelm's Armor:113130E8
+  Vilhelm's Gauntlets:113134D0
+  Vilhelm's Leggings:113138B8
+  Winged Knight Helm:12EBAE40
+  Winged Knight Armor:12EBB228
+  Winged Knight Gauntlets:12EBB610
+  Winged Knight Leggings:12EBB9F8
+  Wolf Knight Helm:157BCF00
+  Wolf Knight Armor:157BD2E8
+  Wolf Knight Gauntlets:157BD6D0
+  Wolf Knight Leggings:157BDAB8
+  Worker Hat:12CD29C0
+  Worker Garb:12CD2DA8
+  Worker Gloves:12CD3190
+  Worker Trousers:12CD3578
+  Xanthous Crown:116694E0
+  Xanthous Overcoat:116698C8
+  Xanthous Gloves:11669CB0
+  Xanthous Trousers:1166A098
+  Blindfold Mask:15095E20
+  Sage's Big Hat:129020C0
+  Symbol of Avarice:14ADD0A0
+  Thrall Hood:12D4CAE0
+  White Preacher Head:14153A20
+  Wolnir's Crown:136D6160
 
 Rings
   Aldrich's Ruby:2000508C
   Aldrich's Sapphire:20005096
   Ashen Estus Ring:200050E6
-  Baneful Bird Ring:20005032
   Bellowing Dragoncrest Ring:20004F07
   Bloodbite Ring+1:20004E85
   Bloodbite Ring:20004E84
@@ -793,16 +771,7 @@ Rings
   Dark Stoneplate Ring:20004E70
   Dark Stoneplate Ring+1:20004E71
   Dark Stoneplate Ring+2:20004E72
-  Darkmoon Blade Covenant Ring:20004F7E
   Darkmoon Ring:20004F6A
-  Debug Effects Ring:200DE2B0
-  Debug Life Ring:200DBC68
-  Debug Life Ring+1:200DBC69
-  Debug Life Ring+2:200DBC6A
-  Debug Life Ring+3:200DBC6C
-  Debug Stamina Ring:200DBC72
-  Debug Stamina Ring+1:200DBC73
-  Debug Stamina Ring+2:200DBC74
   Deep Ring:20004F60
   Dragonscale Ring:2000515E
   Dusk Crown Ring:20004F4C
@@ -827,7 +796,6 @@ Rings
   Knight Slayer's Ring:20005000
   Knight's Ring:20004FEC
   Leo Ring:20004EE8
-  Leo Ring:20004F88
   Life Ring:20004E20
   Life Ring+1:20004E21
   Life Ring+2:20004E22
@@ -866,7 +834,6 @@ Rings
   Ring of the Evil Eye+2:20005070
   Ring of the Evil Eye+3:20005071
   Ring of the Sun's First Born:20004F1B
-  Ring of the Sun's Firstborn:20004F74
   Sage Ring:20004F38
   Sage Ring+1:20004F39
   Sage Ring+2:20004F3A
