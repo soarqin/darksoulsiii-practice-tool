@@ -1,33 +1,31 @@
-Welcome to the Dark Souls III Practice Tool!
+欢迎使用黑暗之魂 III 练习工具！
 
 ----------------------------------------------------------------------------------------------------
-You can run the practice tool in two ways.
+有两种运行方式。
 
-By double-clicking `jdsd_dsiii_practice_tool.exe`:
-  - Double-click `jdsd_dsiii_practice_tool.exe` while the game is running.
+直接运行 `jdsd_dsiii_practice_tool.exe`：
+  - 将压缩包中的所有文件解压到任意文件夹。
+  - 在游戏运行时，双击 `jdsd_dsiii_practice_tool.exe`。
 
-By installing it:
-  - Copy all the files to your Dark Souls III Game folder, the one that contains
-    `DarkSoulsIII.exe`. Repeat this for every patch of the game you play on.
-  - Start Dark Souls III normally.
-  - While it is starting, press and hold right shift for a few seconds, until the tool appears.
-    If you miss it, double-click `jdsd_dsiii_practice_tool.exe` in the Game folder.
-  - To update, copy the new files over the old ones. To uninstall, delete `dinput8.dll`.
+安装到游戏目录：
+  - 将所有文件复制到包含 `DarkSoulsIII.exe` 的游戏目录。如果使用多个游戏版本，请分别复制到对应目录。
+  - 正常启动黑暗之魂 III。
+  - 启动时按住右 Shift 键几秒，直到工具出现。如果错过启动时机，请双击游戏目录中的 `jdsd_dsiii_practice_tool.exe`。
+  - 更新时用新文件覆盖旧文件；卸载时删除 `dinput8.dll`。
 
-The tool always loads the `dinput8.dll` next to the `jdsd_dsiii_practice_tool.exe` you
-double-click: to try a new version, start the game without holding right shift, then run the
-new version's exe.
+工具始终加载所运行的 `jdsd_dsiii_practice_tool.exe` 同目录下的 `dinput8.dll`。试用新版本时，请先在不按右 Shift 键的情况下启动游戏，再运行新版本的 exe。
 
-On Linux, set the game's launch options in Steam to `WINEDLLOVERRIDES="dinput8=n,b" %command%`.
+在 Linux 上，请将 Steam 中的游戏启动选项设为 `WINEDLLOVERRIDES="dinput8=n,b" %command%`。
 ----------------------------------------------------------------------------------------------------
 
-If you have issues or questions, thoroughly check the FAQ.
-If you can't find what you need there, feel free to open an issue or join the discord.
+以下链接中的内容以英文为主。
+如果遇到问题，请先仔细查看 FAQ。
+如果仍未找到答案，欢迎提交 Issue 或加入 Discord 反馈。
 
-You can find the FAQ here:
+FAQ：
 https://github.com/veeenu/darksoulsiii-practice-tool#readme
 
-If you enjoy the tool, please consider supporting me:
+如果喜欢这个工具，请考虑赞助原作者：
 https://patreon.com/johndisandonato
 
 -- johndisandonato

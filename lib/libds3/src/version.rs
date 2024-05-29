@@ -7,7 +7,7 @@ static VERSION: OnceLock<Version> = OnceLock::new();
 /// Ensures that the VERSION static gets filled, or returns an error.
 /// The caller MUST exit cleanly in case of an error.
 pub fn check_version() -> Result<Version, (u32, u32, u32)> {
-    practice_tool_core_windows::version::check_version(&VERSION, "Dark Souls III Practice Tool")
+    practice_tool_core_windows::version::check_version(&VERSION, "黑暗之魂 III 练习工具")
 }
 
 pub fn get_version() -> Version {

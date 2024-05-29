@@ -100,7 +100,7 @@ impl TryFrom<IndicatorConfig> for Indicator {
             .iter()
             .find(|(id, ..)| *id == indicator.indicator)
             .map(|&(_, kind, _)| Indicator { indicator: kind, enabled: indicator.enabled })
-            .ok_or_else(|| format!("Unrecognized indicator: {}", indicator.indicator))
+            .ok_or_else(|| format!("无法识别的指示器：{}", indicator.indicator))
     }
 }
 
@@ -276,32 +276,32 @@ impl FlagSpec {
 /// Valid flag specifiers, their labels, and the pointer chains they toggle.
 #[rustfmt::skip]
 pub(crate) const FLAGS: &[(&str, &str, FlagGetter)] = &[
-    ("all_no_damage", "All no damage", |c| &c.all_no_damage),
-    ("inf_stamina", "Inf Stamina", |c| &c.inf_stamina),
-    ("inf_focus", "Inf Focus", |c| &c.inf_focus),
-    ("inf_consumables", "Inf Consumables", |c| &c.inf_consumables),
-    ("deathcam", "Deathcam", |c| &c.deathcam),
-    ("no_death", "No death", |c| &c.no_death),
-    ("one_shot", "One shot", |c| &c.one_shot),
-    ("evt_draw", "Event draw", |c| &c.evt_draw),
-    ("bloodstain_draw", "Stable/Bloodstain draw", |c| &c.bloodstain_draw),
-    ("evt_disable", "Event disable", |c| &c.evt_disable),
-    ("ai_disable", "AI disable", |c| &c.ai_disable),
-    ("ember", "Ember", |c| &c.ember),
-    ("rend_chr", "Render characters", |c| &c.rend_chr),
-    ("rend_obj", "Render objects", |c| &c.rend_obj),
-    ("rend_map", "Render map", |c| &c.rend_map),
-    ("rend_mesh_hi", "Collision mesh hi", |c| &c.rend_mesh_hi),
-    ("rend_mesh_lo", "Collision mesh lo", |c| &c.rend_mesh_lo),
-    ("rend_mesh_hit", "Collision mesh hit", |c| &c.rend_mesh_hit),
-    ("debug_draw", "Debug draw", |c| &c.debug_draw),
-    ("hurtbox", "Hurtbox", |c| &c.rend_hurtbox),
-    ("all_draw_hit", "All draw hit", |c| &c.all_draw_hit),
-    ("ik_foot_ray", "IK foot ray", |c| &c.ik_foot_ray),
-    ("debug_sphere_1", "Debug sphere 1", |c| &c.debug_sphere_1),
-    ("debug_sphere_2", "Debug sphere 2", |c| &c.debug_sphere_2),
-    ("gravity", "No Gravity", |c| &c.gravity),
-    ("collision", "No Collision", |c| &c.collision),
+    ("all_no_damage", "全体无伤害", |c| &c.all_no_damage),
+    ("inf_stamina", "精力无消耗", |c| &c.inf_stamina),
+    ("inf_focus", "专注值无消耗", |c| &c.inf_focus),
+    ("inf_consumables", "物品使用无消耗", |c| &c.inf_consumables),
+    ("deathcam", "死亡视角", |c| &c.deathcam),
+    ("no_death", "不会死亡", |c| &c.no_death),
+    ("one_shot", "一击必杀", |c| &c.one_shot),
+    ("evt_draw", "事件绘制", |c| &c.evt_draw),
+    ("bloodstain_draw", "稳定站立点/尸迹绘制", |c| &c.bloodstain_draw),
+    ("evt_disable", "事件禁止", |c| &c.evt_disable),
+    ("ai_disable", "不计算AI", |c| &c.ai_disable),
+    ("ember", "余火", |c| &c.ember),
+    ("rend_chr", "绘制角色", |c| &c.rend_chr),
+    ("rend_obj", "绘制物件", |c| &c.rend_obj),
+    ("rend_map", "绘制地图", |c| &c.rend_map),
+    ("rend_mesh_hi", "碰撞检测 (高)", |c| &c.rend_mesh_hi),
+    ("rend_mesh_lo", "碰撞检测 (低)", |c| &c.rend_mesh_lo),
+    ("rend_mesh_hit", "命中碰撞检测", |c| &c.rend_mesh_hit),
+    ("debug_draw", "调试绘制", |c| &c.debug_draw),
+    ("hurtbox", "伤害区域显示", |c| &c.rend_hurtbox),
+    ("all_draw_hit", "绘制所有角色碰撞", |c| &c.all_draw_hit),
+    ("ik_foot_ray", "足部IK追踪", |c| &c.ik_foot_ray),
+    ("debug_sphere_1", "调试球体1", |c| &c.debug_sphere_1),
+    ("debug_sphere_2", "调试球体2", |c| &c.debug_sphere_2),
+    ("gravity", "无重力", |c| &c.gravity),
+    ("collision", "无碰撞", |c| &c.collision),
 ];
 
 impl TryFrom<String> for FlagSpec {
@@ -312,7 +312,7 @@ impl TryFrom<String> for FlagSpec {
             .iter()
             .find(|(id, ..)| *id == value)
             .map(|&(_, label, getter)| FlagSpec::new(label, getter))
-            .ok_or_else(|| format!("\"{}\" is not a valid flag specifier", value))
+            .ok_or_else(|| format!("无效的开关标识：{value}"))
     }
 }
 
@@ -320,7 +320,7 @@ impl ConfigSchema for Config {
     type Config = Config;
 
     const SETTINGS: Kind = Kind {
-        name: "Settings",
+        name: "设置",
         fields: &[
             ("log_level", Field::Choice(&["DEBUG", "TRACE", "INFO", "WARN", "ERROR", "OFF"])),
             ("display", Field::Key),
@@ -333,22 +333,22 @@ impl ConfigSchema for Config {
     };
     #[rustfmt::skip]
     const WIDGETS: &'static [Kind] = &[
-        Kind { name: "Flag", fields: &[("flag", Field::Flag), ("hotkey", Field::OptKey)] },
-        Kind { name: "Multi flag", fields: &[("flags", Field::Flags), ("label", Field::Text("Multi flag")), ("hotkey", Field::OptKey)] },
-        Kind { name: "Label", fields: &[("label", Field::Text(""))] },
-        Kind { name: "Group", fields: &[("group", Field::Text("Group")), ("commands", Field::Widgets)] },
-        Kind { name: "Savefile manager", fields: &[("savefile_manager", Field::KeyOrTrue)] },
-        Kind { name: "Item spawner", fields: &[("item_spawner", Field::KeyOrTrue)] },
-        Kind { name: "Character stats", fields: &[("character_stats", Field::KeyOrTrue)] },
-        Kind { name: "Position", fields: &[("position", Field::KeyOrTrue), ("save", Field::OptKey)] },
-        Kind { name: "Nudge position", fields: &[("nudge", Field::Float(1.)), ("nudge_up", Field::OptKey), ("nudge_down", Field::OptKey)] },
-        Kind { name: "Cycle speed", fields: &[("cycle_speed", Field::Floats(&[0.5, 1., 2.])), ("hotkey", Field::OptKey)] },
-        Kind { name: "Cycle color", fields: &[("cycle_color", Field::Ints(&[0, 1, 2, 3])), ("hotkey", Field::OptKey)] },
-        Kind { name: "Souls", fields: &[("souls", Field::Int(10000)), ("hotkey", Field::OptKey)] },
-        Kind { name: "Open menu", fields: &[("open_menu", Field::Choice(&["travel", "attune"])), ("hotkey", Field::OptKey)] },
-        Kind { name: "Quitout", fields: &[("quitout", Field::KeyOrTrue)] },
-        Kind { name: "Target", fields: &[("target", Field::KeyOrTrue)] },
-        Kind { name: "Input viewer", fields: &[("input_viewer", Field::KeyOrTrue), ("seconds", Field::Int(5))] },
+        Kind { name: "开关", fields: &[("flag", Field::Flag), ("hotkey", Field::OptKey)] },
+        Kind { name: "组合开关", fields: &[("flags", Field::Flags), ("label", Field::Text("组合开关")), ("hotkey", Field::OptKey)] },
+        Kind { name: "标签", fields: &[("label", Field::Text(""))] },
+        Kind { name: "分组", fields: &[("group", Field::Text("分组")), ("commands", Field::Widgets)] },
+        Kind { name: "存档管理", fields: &[("savefile_manager", Field::KeyOrTrue)] },
+        Kind { name: "生成物品", fields: &[("item_spawner", Field::KeyOrTrue)] },
+        Kind { name: "角色属性", fields: &[("character_stats", Field::KeyOrTrue)] },
+        Kind { name: "保存位置", fields: &[("position", Field::KeyOrTrue), ("save", Field::OptKey)] },
+        Kind { name: "位置调整", fields: &[("nudge", Field::Float(1.)), ("nudge_up", Field::OptKey), ("nudge_down", Field::OptKey)] },
+        Kind { name: "速度", fields: &[("cycle_speed", Field::Floats(&[0.5, 1., 2.])), ("hotkey", Field::OptKey)] },
+        Kind { name: "模型颜色", fields: &[("cycle_color", Field::Ints(&[0, 1, 2, 3])), ("hotkey", Field::OptKey)] },
+        Kind { name: "灵魂", fields: &[("souls", Field::Int(10000)), ("hotkey", Field::OptKey)] },
+        Kind { name: "打开菜单", fields: &[("open_menu", Field::Choice(&["travel", "attune"])), ("hotkey", Field::OptKey)] },
+        Kind { name: "快速退出", fields: &[("quitout", Field::KeyOrTrue)] },
+        Kind { name: "目标单位信息", fields: &[("target", Field::KeyOrTrue)] },
+        Kind { name: "输入显示", fields: &[("input_viewer", Field::KeyOrTrue), ("seconds", Field::Int(5))] },
     ];
 
     fn flags() -> impl Iterator<Item = (&'static str, &'static str)> {

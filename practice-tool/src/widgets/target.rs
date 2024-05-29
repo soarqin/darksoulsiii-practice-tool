@@ -93,8 +93,8 @@ impl Target {
         Target {
             label: hotkey
                 .as_ref()
-                .map(|k| format!("Target entity info ({})", k))
-                .unwrap_or_else(|| "Target entity info".to_string()),
+                .map(|k| format!("锁定目标单位信息 ({})", k))
+                .unwrap_or_else(|| "锁定目标单位信息".to_string()),
             text: String::new(),
             alloc_addr,
             detour_addr,
@@ -223,7 +223,7 @@ impl Widget for Target {
 
         let Some(EnemyInfo { hp, max_hp, mp, max_mp, sp, max_sp, res, poise }) = self.get_data()
         else {
-            ui.text("No enemy locked on");
+            ui.text("未锁定敌人");
             return;
         };
 
@@ -293,7 +293,7 @@ impl Widget for Target {
         pbar(text, "MP", mp, max_mp, COLOR_MP);
 
         text.clear();
-        write!(text, "Poise    {:>5.0}/{:>5.0} {:.2}s", poise, poise_max, poise_time).ok();
+        write!(text, "韧性    {:>5.0}/{:>5.0} {:.2}s", poise, poise_max, poise_time).ok();
         ui.text(&*text);
         let pct = if poise_max.abs() < 0.0001 { 0.0 } else { poise / poise_max };
         let tok = ui.push_style_color(StyleColor::PlotHistogram, COLOR_BASE);
@@ -307,11 +307,11 @@ impl Widget for Target {
         // 0xaeac89ff
         // 0xa0b5c6ff
 
-        pbar(text, "Poison", poison, poison_max, COLOR_POISON);
-        pbar(text, "Toxic", toxic, toxic_max, COLOR_TOXIC);
-        pbar(text, "Bleed", bleed, bleed_max, COLOR_BLEED);
-        pbar(text, "Curse", curse, curse_max, COLOR_CURSE);
-        pbar(text, "Frost", frost, frost_max, COLOR_FROST);
+        pbar(text, "中毒", poison, poison_max, COLOR_POISON);
+        pbar(text, "剧毒", toxic, toxic_max, COLOR_TOXIC);
+        pbar(text, "出血", bleed, bleed_max, COLOR_BLEED);
+        pbar(text, "诅咒", curse, curse_max, COLOR_CURSE);
+        pbar(text, "寒气", frost, frost_max, COLOR_FROST);
     }
 
     fn interact(&mut self, ui: &imgui::Ui) {

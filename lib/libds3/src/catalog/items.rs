@@ -40,19 +40,19 @@ impl ItemCategory {
 
     pub fn label(self) -> &'static str {
         match self {
-            Self::Weapons => "Weapons",
-            Self::Ammunition => "Ammunition",
-            Self::Head => "Armor: Head",
-            Self::Chest => "Armor: Chest",
-            Self::Arms => "Armor: Arms",
-            Self::Legs => "Armor: Legs",
-            Self::Rings => "Rings / Covenants",
-            Self::Sorceries => "Sorceries",
-            Self::Pyromancies => "Pyromancies",
-            Self::Miracles => "Miracles",
-            Self::Consumables => "Consumables",
-            Self::Materials => "Materials",
-            Self::Miscellaneous => "Miscellaneous / Key Items",
+            Self::Weapons => "武器",
+            Self::Ammunition => "箭矢/弩箭",
+            Self::Head => "防具: 头部",
+            Self::Chest => "防具: 身体",
+            Self::Arms => "防具: 手部",
+            Self::Legs => "防具: 腿部",
+            Self::Rings => "戒指/誓约",
+            Self::Sorceries => "魔法",
+            Self::Pyromancies => "咒术",
+            Self::Miracles => "奇迹",
+            Self::Consumables => "消耗品",
+            Self::Materials => "材料",
+            Self::Miscellaneous => "杂项/关键物品",
         }
     }
 }
