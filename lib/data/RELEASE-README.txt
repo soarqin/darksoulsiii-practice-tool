@@ -1,30 +1,24 @@
-Welcome to the Dark Souls III Practice Tool!
+欢迎使用黑暗之魂III练习工具!
 
-----------------------------------------------------------------------------------------------------
-You can run the practice tool in two ways.
+独立运行工具：
+- 在游戏启动后双击`jdsd_dsiii_practice_tool.exe`挂载。
 
-By double-clicking `jdsd_dsiii_practice_tool.exe`:
-  - Double-click `jdsd_dsiii_practice_tool.exe` while the game is running.
+作为mod外挂刀游戏内：
+- 将`jdsd_dsiii_practice_tool.dll`改名为`dinput8.dll`。请确认文件扩展名无误。
+- 复制`dinput8.dll`到`DarkSoulsIII.exe`所在的游戏目录，必须和`DarkSoulsIII.exe`同目录。
+- 正常启动游戏。
+- 游戏启动过程中按住右shift数秒，直到工具界面出现。
 
-By installing the DLL:
-  - Rename `jdsd_dsiii_practice_tool.dll` to `dinput8.dll`. Make sure your file extensions are 
-    visible to ensure you are naming the file correctly.
-  - Copy `dinput8.dll` and `jdsd_dsiii_practice_tool.toml` to you Dark Souls III Game folder. The
-    files must be in the same folder as `DarkSoulsIII.exe`.
-  - Start Dark Souls III normally.
-  - While it is starting, press and hold right shift for a few seconds, until the tool appears.
+注意两种方法不能同时使用
 
-Please note that if you want to use both methods, you need to keep two separate copies: the exe
-will not start the tool if the DLL has been renamed to dinput8.dll.
-----------------------------------------------------------------------------------------------------
+【注意以下访问内容以英文为主】
+如果遇到bug或者疑问，请不吝访问FAQ。
+如果找不到需要的内容，可提交Issue或者加入Discord频道。
 
-If you have issues or questions, thoroughly check the FAQ.
-If you can't find what you need there, feel free to open an issue or join the discord.
-
-You can find the FAQ here:
+你可以在这里找到FAQ: 
 https://github.com/veeenu/darksoulsiii-practice-tool#readme
 
-If you enjoy the tool, please consider supporting me:
+如果你喜欢这个工具，请考虑支持(捐助)我：
 https://patreon.com/johndisandonato
 
 -- johndisandonato
