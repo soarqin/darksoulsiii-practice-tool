@@ -16,6 +16,7 @@
 
 mod config;
 mod dlc_ownership;
+mod fonts;
 mod practice_tool;
 mod widgets;
 

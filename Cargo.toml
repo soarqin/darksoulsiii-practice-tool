@@ -46,9 +46,12 @@ practice-tool-memedit = { git = "https://github.com/veeenu/practice-tool-core", 
 version = "0.62.0"
 features = [
   "Win32_Foundation",
+  "Win32_Graphics_Gdi",
+  "Win32_Security",
   "Win32_Storage_FileSystem",
   "Win32_System_LibraryLoader",
   "Win32_System_Memory",
+  "Win32_System_Registry",
   "Win32_System_Diagnostics_Debug",
   "Win32_System_ProcessStatus",
   "Win32_System_SystemInformation",
@@ -61,8 +64,8 @@ features = [
 # hudhook = { path = "../hudhook" }
 
 [patch.'https://github.com/veeenu/practice-tool-core']
-macro-param = { path = "../practice-tool-core/macro-param" }
-practice-tool-core = { path = "../practice-tool-core" }
-practice-tool-tasks = { path = "../practice-tool-core/tasks" }
-practice-tool-core-windows = { path = "../practice-tool-core/windows" }
-practice-tool-memedit = { path = "../practice-tool-core/memedit" }
+macro-param = { path = "../core/macro-param" }
+practice-tool-core = { path = "../core" }
+practice-tool-tasks = { path = "../core/tasks" }
+practice-tool-core-windows = { path = "../core/windows" }
+practice-tool-memedit = { path = "../core/memedit" }

@@ -198,6 +198,7 @@ impl CfgCommand {
             CfgCommand::ItemSpawner { hotkey_load: key_load } => Box::new(ItemSpawner::new(
                 chains.spawn_item_func_ptr as usize,
                 chains.map_item_man as usize,
+                chains.param,
                 &chains.gravity,
                 key_load.into_option(),
                 settings.display,

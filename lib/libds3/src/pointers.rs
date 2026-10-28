@@ -40,6 +40,7 @@ impl Display for CharacterStats {
 //
 
 pub struct PointerChains {
+    pub param: usize,
     pub all_no_damage: Bitflag<u8>,
     pub no_death: Bitflag<u8>,
     pub one_shot: Bitflag<u8>,
@@ -107,6 +108,7 @@ impl From<BaseAddresses> for PointerChains {
             menu_man,
             spawn_item_func_ptr,
             map_item_man,
+            param,
             no_logo,
             current_target,
             menu_travel,
@@ -346,6 +348,7 @@ impl From<BaseAddresses> for PointerChains {
             // souls was previously pointer_chain!(sprj_debug_event as _, 0x3d0, 0x74),
             souls: pointer_chain!(base_a, 0x10, 0x44 + 12 * size_of::<i32>()),
             map_item_man: map_item_man as _,
+            param,
             spawn_item_func_ptr: spawn_item_func_ptr as _,
             travel_ptr: menu_travel,
             attune_ptr: menu_attune - 0x39,

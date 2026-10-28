@@ -73,6 +73,7 @@ pub(crate) struct PracticeTool {
     fonts: Option<FontIDs>,
     icons: Icons,
     config_editor: ConfigEditor<Config>,
+    font_fallback: crate::fonts::FontFallback,
 
     position_bufs: [String; 4],
     position_prev: [f32; 3],
@@ -247,6 +248,7 @@ impl PracticeTool {
             fonts: None,
             icons: Icons::default(),
             config_editor: ConfigEditor::new(config_path()),
+            font_fallback: crate::fonts::FontFallback::default(),
             ui_state: UiState::Closed,
             position_prev: Default::default(),
             position_bufs: Default::default(),
@@ -738,8 +740,14 @@ impl PracticeTool {
                 for _ in 0..5 {
                     ui.text("");
                 }
-                for l in self.log.iter().rev().take(3).rev() {
-                    ui.text(&l.1);
+                for l in self.log.iter_mut().rev().take(3).rev() {
+                    crate::fonts::request_text(ui, &l.1);
+                    if crate::fonts::text_ready(ui, &l.1) {
+                        ui.text(&l.1);
+                    } else {
+                        l.0 = Instant::now();
+                        ui.text("Loading...");
+                    }
                 }
                 ui.set_scroll_here_y();
             });
@@ -827,7 +835,8 @@ impl PracticeTool {
 }
 
 impl ImguiRenderLoop for PracticeTool {
-    fn before_render(&mut self, ctx: &mut Context, _: &mut dyn RenderContext) {
+    fn before_render(&mut self, ctx: &mut Context, renderer: &mut dyn RenderContext) {
+        self.font_fallback.update(ctx, renderer);
         self.release_queue.drain(..).for_each(|key| {
             ctx.io_mut().add_key_event(key, false);
         });
@@ -905,24 +914,22 @@ impl ImguiRenderLoop for PracticeTool {
                 .ok(),
         );
 
+        self.font_fallback.reset();
         let fonts = ctx.fonts();
-        self.fonts = Some(FontIDs {
-            small: fonts.add_font(&[FontSource::TtfData {
+        // Every glyph of the built-in font takes priority over system
+        // fallbacks.
+        let mut comic_mono = |size_pixels| {
+            fonts.add_font(&[FontSource::TtfData {
                 data: include_bytes!("../../lib/data/ComicMono.ttf"),
-                size_pixels: 11.,
-                config: None,
-            }]),
-            normal: fonts.add_font(&[FontSource::TtfData {
-                data: include_bytes!("../../lib/data/ComicMono.ttf"),
-                size_pixels: 18.,
-                config: None,
-            }]),
-            big: fonts.add_font(&[FontSource::TtfData {
-                data: include_bytes!("../../lib/data/ComicMono.ttf"),
-                size_pixels: 24.,
-                config: None,
-            }]),
-        });
+                size_pixels,
+                config: Some(FontConfig {
+                    glyph_ranges: FontGlyphRanges::from_slice(&[0x20, 0xffff, 0]),
+                    ..Default::default()
+                }),
+            }])
+        };
+        self.fonts =
+            Some(FontIDs { small: comic_mono(11.), normal: comic_mono(18.), big: comic_mono(24.) });
     }
 }
 

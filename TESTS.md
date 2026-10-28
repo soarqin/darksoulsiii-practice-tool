@@ -62,6 +62,17 @@ Use this file as a guideline for testing the various features in the practice to
 - [ ] Item spawn: should apply upgrades and infusion correctly to the spawned item.
 - [ ] Item spawn: should provide the specified amount of items.
 - [ ] Item spawn: should filter correctly, and show the item icons.
+- [ ] Item spawn: names follow the game's language, including Chinese and Japanese; typing,
+  pasting and cancelling a non-English search works without changing the input unexpectedly.
+- [ ] Item spawn: refresh reflects loaded PARAM changes; unavailable game data shows a waiting state.
+- [ ] Item spawn: clearing the selection or filtering it out disables spawning, including its
+  hotkey; refreshing preserves an existing selection by item ID.
+- [ ] Item spawn: inserting or removing infusion PARAM rows preserves the selected infusion
+  by value; removing that infusion resets the infusion and upgrade options.
+- [ ] Item spawn: normal and special weapons have their correct reinforcement limits; only
+  valid infusions are available, and ammunition types remain separate items.
+- [ ] Fonts: English text retains its original appearance at every UI size; scrolling to new
+  localized names loads their glyphs and keeps already displayed names readable.
 - [ ] Edit stats: should apply the correct stats and not crash for each stat.
 - [ ] Save position: should change the numbers on 2nd line when saving.
 - [ ] Load position: should reposition and reorient character.
